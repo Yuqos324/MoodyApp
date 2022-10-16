@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood Checker"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="224dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Your name..."
+        android:inputType="textPersonName"
+        android:textDirection="ltr"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <TextView
+        android:id="@+id/subHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick one"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgSad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <ImageButton
+        android:id="@+id/imgHappy"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/happy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ImageButton
+        android:id="@+id/imgSad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <ImageButton
+        android:id="@+id/imgMad"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/angry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.57" />
+</androidx.constraintlayout.widget.ConstraintLayout>
